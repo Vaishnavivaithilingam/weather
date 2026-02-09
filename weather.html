@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <!--CSS Link-->
+    <link rel="stylesheet" href="weather.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <!--Search Box-->
+        <div class="searchbox">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Type Your Location">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <!--Not Found Page-->
+        <div class="not-found">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl-BraBWVGZSIUOFvGUTJUuPQXTLeNEyWYEg&s" alt="error">
+            <p>Invalid Location</p>
+        </div>
+
+        <!--Weather Box-->
+        <div class="weather-box">
+            <img src="" alt="">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+
+        <!--Weather Details-->
+        <div class="weather">
+            <!--Humidity Details-->
+            <div class="humidity-details">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            
+            <!--Wind Details-->
+            <div class="wind-details">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind</p>
+                </div>
+            </div>
+
+            <!--Pressure Details-->
+            <div class="pressure-details">
+                <i class="fa-solid fa-arrow-down-up-across-line"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Pressure</p>
+                </div>
+            </div>
+
+            <!--Visibility Details-->
+            <div class="visibility-details">
+                <i class="fa-solid fa-eye"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Visiblity</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--JS Link-->
+    <script src="weather.js"></script>
+</body>
+</html>
